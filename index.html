@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Harishwa.</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJwQFGgooQhgl8QeBQp_Bb2O2u05GzjMMLwR14BQ3exUuJcFmuWKB2xRrj4wj8pn3uoE&usqp=CAU">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="logo">
+        <h1>harishwa;</h1>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a onclick="contactmenu()" href="#" >Contact</a>
+        </ul>
+    </div>
+
+    <div id="contact-menu">
+        <section>You may contact me through twitter or even discord.</section>
+    </div>
+
+    <header>
+        <h2 class="line-1 typewriter">Hi I code, edit, animate and sell</h2>
+    </header>
+
+
+    <div class="icons">
+        <ul>
+            <a href="https://github.com/eddyralnation" target="blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://x.com/envi_twter" target="blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.instagram.com/__exnviix__/" target="blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://medium.com/@harishwa" target="blank"><ion-icon name="logo-medium"></ion-icon></a>
+            <a href="https://discord.com/invite/jqna7wuQRU" target="blank"><ion-icon name="logo-discord"></ion-icon></a>
+
+        </ul>
+    </div>
+
+    <div class="payhip">
+
+        <a href="https://payhip.com/harishwa" target="blank"><img src="payhip.png">payhip<ion-icon name="arrow-redo-outline"></ion-icon></a>
+    </div>
+
+
+    <nav>
+        <!-- Toggle menu button with ion-icon -->
+        <a onclick="togglemenu('menuListNav')"><span class="menu-list">What do I do?</span><ion-icon name="arrow-down-outline" id="arrowIcon"></ion-icon></a>
+
+        <!-- Menu list -->
+        <p id="menuListNav">I have an experience of over 2+ years in editing videos by using After effects. Plus I am a front-end developer and an animator who could animate 3d models and can convert photos from being static to dynamic. </p>
+    </nav>
+
+
+    <div class="about"  id="about">
+        <article>Hey there! I'm <b>Harishwa</b> a minimalist coder, video editor, writer and an avid reader who does things mostly in an impractical way. As said above, I have an experience of about 2+ years in the field of editing and 1.5+ years in the field of designing websites. You may see my works mostly in my social media handles.<b> Contact me/Direct message me for any collaboration/paid works!</b><br>Thanks!<br></article>
+    </div>
+
+    <footer>
+        <h5>Designed by<span> Harishwa</span>  2024</h5>
+    </footer>
+
+
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        document.oncontextmenu = function () { return false; }
+
+        function togglemenu(menuId) { 
+            var menuList = document.getElementById(menuId);
+            if (menuList.style.maxHeight != "0%") {
+                menuList.style.maxHeight = "0%";
+                menuList.style.opacity = "0%";
+                arrowIcon.classList.remove("rotate");
+                arrowIcon2.classList.remove("rotate2");
+            } else {
+                menuList.style.maxHeight = "200%";
+                menuList.style.opacity = "100%";
+                arrowIcon.classList.add("rotate");
+                arrowIcon2.classList.add("rotate2");
+            }
+        }
+
+
+        function contactmenu()
+        {
+            var contactmenu=document.getElementById('contact-menu')
+            if(contactmenu.style.maxHeight=="0px")
+            {
+                contactmenu.style.maxHeight="100px"
+                contactmenu.style.opacity="100%"
+            }
+            else
+            {
+                contactmenu.style.maxHeight="0px"
+                contactmenu.style.opacity="0%"
+            }
+        }
+    </script>
+</body>
+</html>
